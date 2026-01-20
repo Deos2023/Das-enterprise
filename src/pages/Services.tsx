@@ -17,6 +17,8 @@ import cpapResmed from "@/assets/cpap-resmed.jpeg";
 import oxymed10l from "@/assets/oxymed-10l.jpeg";
 import philips5l from "@/assets/philips-5l.jpeg";
 import oxygenCylinders from "@/assets/oxygen-cylinders.jpeg";
+import aTypeCylinder  from "@/assets/A-type-cylinder.jpeg";
+
 
 const services = [
   {
@@ -75,6 +77,13 @@ const services = [
     image: cardiacMonitor,
     features: ["5 Parameters", "Large Display", "Alarm System", "Portable Option"],
   },
+  {
+    icon: <Cylinder className="w-8 h-8" />,
+    title: "A Type Oxygen Cylinder Rent",
+    description: "A type oxygen cylinders for medical use. Suitable for patients requiring portable oxygen therapy. Regularly maintained and refilled with high-quality oxygen.",
+    image: aTypeCylinder,
+    features: ["A Type Available", "Medical-Grade Oxygen", "Regular Refill Service", "Portable Design"],
+  }
 ];
 
 const Services = () => {

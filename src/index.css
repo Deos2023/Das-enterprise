@@ -52,13 +52,11 @@
     --medical-green-light: 152 60% 55%;
     --medical-teal: 180 60% 40%;
     --emergency-red: 0 84% 55%;
-    --trust-navy: 220 60% 25%;
+    --trust-navy: 220 50% 40%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(207 90% 45%), hsl(207 90% 35%));
-    --gradient-hero: linear-gradient(135deg,
-        hsl(207 90% 55% / 0.65),
-        hsl(180 60% 50% / 0.60));
+    --gradient-hero: linear-gradient(135deg, hsl(207 90% 55% / 0.65), hsl(180 60% 50% / 0.60));
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 98%));
     --gradient-cta: linear-gradient(135deg, hsl(152 60% 45%), hsl(152 60% 35%));
 
