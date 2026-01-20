@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
-              © {currentYear} Das Enterprises. All rights reserved.
+              © {currentYear} Das Enterprises. All rights reserved. Developed & Maintained by <span className="text-yellow-500">Digital Exposure Online Services</span>
             </p>
             <div className="flex items-center gap-6">
               <a
