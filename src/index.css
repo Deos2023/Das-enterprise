@@ -56,7 +56,9 @@
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(207 90% 45%), hsl(207 90% 35%));
-    --gradient-hero: linear-gradient(135deg, hsl(207 90% 45% / 0.85), hsl(180 60% 40% / 0.75));
+    --gradient-hero: linear-gradient(135deg,
+        hsl(207 90% 55% / 0.65),
+        hsl(180 60% 50% / 0.60));
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 98%));
     --gradient-cta: linear-gradient(135deg, hsl(152 60% 45%), hsl(152 60% 35%));
 
@@ -131,13 +133,19 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', system-ui, sans-serif;
     @apply font-semibold tracking-tight;
   }
 }
 
 @layer components {
+
   /* Hero Button Styles */
   .btn-hero-primary {
     @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300;
@@ -281,6 +289,7 @@
 }
 
 @layer utilities {
+
   /* Animation Utilities */
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
@@ -325,6 +334,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -335,6 +345,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -346,6 +357,7 @@
     opacity: 0;
     transform: translateX(-40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -357,6 +369,7 @@
     opacity: 0;
     transform: translateX(40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -368,6 +381,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -375,9 +389,12 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -387,9 +404,11 @@
   0% {
     box-shadow: 0 0 0 0 hsl(var(--emergency-red) / 0.5);
   }
+
   70% {
     box-shadow: 0 0 0 15px hsl(var(--emergency-red) / 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 hsl(var(--emergency-red) / 0);
   }
